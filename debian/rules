@@ -2,7 +2,7 @@
 # -*- makefile -*-
 
 # Uncomment this to turn on verbose mode.
-export DH_VERBOSE=1
+#export DH_VERBOSE=1
 
 DEBIAN_VERSION := $(shell dpkg-parsechangelog | sed -rne "s,^Version: (.*),\1,p")
 DEBIAN_REVISION := $(shell dpkg-parsechangelog | sed -rne "s,^Version: ([0-9.]+)(~|-)(.*),\3,p")
